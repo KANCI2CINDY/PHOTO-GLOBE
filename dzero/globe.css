@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(191, 191, 236) ;
+}
+
+#earth{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    background: #888 url(carte1.jpg) 0 0 repeat;
+    border-radius: 50%;
+    background-size: 630px;
+    animation: rotate 4s linear infinite;
+    transition: transform 200ms linear;
+    transform-style: preserve-3d;
+    box-shadow: inset 20px 0 80px 6px rgb(253, 253, 253);
+    color: #fffefe;
+}
+@keyframes rotate{
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 630px 0;
+    }
+}
+.h1 {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    animation: color 5s infinite ;
+}
+.titre{
+    display: flex;
+    justify-content: center;
+   margin-bottom: 3%;
+   margin-top: 3%;
+}
+@keyframes h1{
+    0%{
+        color: red;color: green;color: cornflowerblue;color: gray;
+    }
+    100%{
+        color: aqua;color: yellow;color: blueviolet;
+    }
+}
